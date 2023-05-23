@@ -54,26 +54,24 @@ int main(int argc, char **argv)
 			}
 			free(tokens);
 		}
-        else if (_strcmp(tokens[0], "unsetenv") == 0)
-        {
-            if (tokens[1] != NULL && tokens[2] == NULL)
-            {
-                custom_unsetenv(tokens[1]);
-            }
-            else
-            {
-                _fprintf(stderr, "unsetenv: invalid argument\n");
-            }
-            free(tokens);
-        }
-        else
-        {
-            execute_command(tokens);
-            free(tokens);
-        }
-
-        free(line);
-    }
-
-    return 0;
+		else if (_strcmp(tokens[0], "unsetenv") == 0)
+		{
+			if (tokens[1] != NULL && tokens[2] == NULL)
+			{
+				custom_unsetenv(tokens[1]);
+			}
+			else
+			{
+				_fprintf(stderr, "unsetenv: invalid argument\n");
+			}
+			free(tokens)
+			}
+		else
+		{
+			execute_command(tokens);
+			free(tokens);
+		}
+		free(line);
+	}
+	return 0;
 }
