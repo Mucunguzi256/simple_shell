@@ -64,7 +64,7 @@ int main(int argc, char **argv)
 			{
 				_fprintf(stderr, "unsetenv: invalid argument\n");
 			}
-			free(tokens)
+			free(tokens);
 			}
 		else
 		{
